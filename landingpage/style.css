@@ -132,6 +132,7 @@ h2 {
         justify-content: center;
         flex-wrap: nowrap;
         border-bottom: solid black 8px;
+        margin: 10;
       
     }
     
@@ -168,29 +169,33 @@ h2 {
 }
 
 /* Lower Width for About Me section of home page */
-/*
+ 
 @media screen and (max-width: 725px) {
         .topnav {
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         align-items: center;
         flex-wrap: nowrap;
         border-bottom: solid black 8px;
+        margin: 0;
+       
+         
          
         
     }
     
     .links {
-        width: 70%;
+        width: 80%;
 
     }
 
     .main-section {
         display: flex;
         flex-direction: column;
-        width: 70%;
-        align-items: center;
-        margin: 60px 80px 0px 80px;
+        width: 90%;
+       
+       
          
   
         
@@ -210,7 +215,7 @@ h2 {
         width: 100%;
     }
 }
-*/
+ 
 /* Poems */ 
 
 .menu {
@@ -225,16 +230,16 @@ h2 {
     display: block;
     
     text-decoration: none;
-    padding: 1vw;
-    font-size: 2.5vw;
+    padding: .7vw;
+    
     min-width: 17vw;
     color: black;
 }
 
 .sidebar {
     height: 100%;
-    width: 17vw;
-     
+    width: 10vw;
+    font-size: max(2.5vw, 28px); 
     margin-top: 1.5vw;
     padding-top: 3vw;
     
@@ -251,17 +256,11 @@ h2 {
 }
 .sidebar div {
 padding: .8vw;
-font-size: 2vw;
+ 
 display: block;
 }
 
-.body-text {
  
-font-size: 2vw;
- 
- 
-font-weight: 450;
-}
 
 .poetry {
      
@@ -289,14 +288,14 @@ font-weight: 450;
 }
 
 p {
-    font-size: 2vw;
+    font-size: clamp(10px, 2vw, 30px);
     font-family: Didot;
 }
 
 #home {
     
     padding-top: 0;
-    font-size: 6vw;
+    font-size: clamp(28px, 6vw, 76px);
     font-weight: bold;
     color: black;
      
@@ -311,7 +310,7 @@ p {
         margin-left: 4vw;
         display: flex;
         flex-direction: row;
-        
+       
          
     }
     
@@ -383,15 +382,14 @@ p {
     }
     
     p {
-        font-size: 2.7vw;
-        font-family: Didot;
+         
          
     }
     
     #home {
         
         padding-top: 0;
-        font-size: 6vw;
+        font-size: clamp(28px, 6vw, 76px);
         
         font-weight: bold;
         color: black;
