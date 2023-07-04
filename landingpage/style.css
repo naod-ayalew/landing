@@ -118,6 +118,8 @@ h2 {
 .cv-category-content .what {
     width: 75vw;
     padding: 8px 10px 8px 10px;
+    display: flex;
+    flex-direction: column;
      
 }
 
@@ -186,10 +188,13 @@ h2 {
     }
     
     .links {
-        width: 80%;
+        width: 90%;
+        font-size: 5.5vw;
 
     }
-
+    .name {
+        font-size: 12vw;
+    }
     .main-section {
         display: flex;
         flex-direction: column;
@@ -204,6 +209,13 @@ h2 {
     .header, .subheader {
         margin-bottom: 25px;
     }
+    .header {
+        font-size: 9vw;
+    }
+    .subheader {
+        font-size: 6vw;
+        font-weight: bold;
+    }
     .about {
         display: flex;
         flex-direction: column;
@@ -213,6 +225,9 @@ h2 {
     }
     .about, .description {
         width: 100%;
+    }
+    .regulartext {
+        font-size: 5vw;
     }
 }
  
