@@ -1,4 +1,4 @@
-/* Base of the website - header, fonts */
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=GFS+Didot&family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
  
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap');
@@ -23,13 +23,11 @@ html {
     margin: 20px 80px 0px 80px;
     flex-wrap: wrap;
     border-bottom: solid black 8px;
-     
-
 }
+
 .name {
     font-size: 6vw;
     font-weight: 500;
-     
     text-transform: uppercase;
     text-align: center;
 }
@@ -45,47 +43,135 @@ html {
      
 }
 
-
-/* Home page */ 
-
 a {
     text-decoration: none;
     color: black; 
 }
-.header {
-    font-size:  5vw;
+/* Landing Page */ 
+
+body {
+    background-color: #D7D2CB;
+    font-family: 'Manrope', sans-serif;
+    color: #151515
+   }
+html {
+    scroll-behavior: smooth;
+}
+
+.homewholepage {
+    display: flex;
+    height:100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.homewrapper {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100vw;
+    height: 50vh;
+    align-items: center;
+    justify-content:space-evenly;
+
+}
+.homeheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 60%;
+
+}
+.homename {
+    
+     
+    width: 100%;
+    padding-bottom: 5vh;
+    font-size: clamp(85px,8vw, 128px);
+     
     font-weight: 600;
-    text-align: center;
+    
 }
-.subheader {
-    font-size: 3vw;
-    font-weight: 500;
-}
-.regulartext {
-    font-size: 2vw;
-}
-.main-section {
+.homelinks {
     display: flex;
     flex-direction: row;
-    margin: 80px 100px 80px 100px;
-    height: 55vh;
     justify-content: space-between;
+    
+    
+    width: 100%;
+    font-size: clamp(33px,3vw, 55px);
+    font-weight: 600;
+     
+   
 }
 
-.description {
-    width: 55%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+ 
+img  {
+    height: 100%;
+    width: auto;
+    max-height: 525px;
+    max-width: 500px;
+    
+    
+}
+ 
+ 
+a {
+    text-decoration: none;
+    color: black; 
 }
 
-.about {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+/* narrow landing page */
 
+@media screen and (max-width: 1000px) {
+    .homewrapper {
+        display:flex;
+        flex-direction: column;
+         
+        width: 100vw;
+        height: 50vh;
+        justify-content: space-between;
+      
+        align-items: center;
+        justify-content:center;
+    
+    }
+
+    .homelinks {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        justify-content: space-between;
+         
+        width : 100%;
+        font-size: clamp(29px, 4vw, 36px);
+        font-weight: bold;
+       
+    }
+    .homename {
+         
+        
+        width: 100%;
+        padding-bottom: 5vh;
+        font-size: min(8vw, 36px)
+        font-weight: 600;
+         
+        
+    }
+    .homeheader {
+        justify-content: flex-start;
+        width: 90vw;
+         
+        
+        
+    }
+    .homeimage {
+        position: relative;
+    }
+}
 
 /* CV */
 
@@ -100,7 +186,7 @@ a {
     display: flex;
     flex-wrap: nowrap;
      
-    font-size: clamp(20px, 2vw, 28px);
+    font-size: 2vw;
      
    
     border-top: 3px solid black;
@@ -109,7 +195,7 @@ a {
 }
 
 h2 {
-    font-size: clamp(24, 3vw, 34px);
+    font-size: 3vw;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -119,7 +205,6 @@ h2 {
     width: 20vw;
     font-weight: 800;
     padding: 8px 10px 8px 0px;
-    
    
 }
 
@@ -130,16 +215,7 @@ h2 {
     flex-direction: column;
      
 }
-.whatcollege {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-.college {
-    padding: 0;
-}
  
 
 /* Lower Width Answers */
@@ -434,59 +510,5 @@ p {
 }
 
 
-/*Alternate Home Page*/
-
-.wholepage {
-    display: flex;
-    height:100vh;
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
-}
-
-.alt-wrapper {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 80vw;
-    height: 50vh;
-  
-    align-items: center;
-    justify-content:center;
-
-}
-
-.alt-name {
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    padding: 5vw;
-    font-size: 8vw;
-    font-weight: 600;
-    
-}
-.alt-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 10vh 0 10vh 0;
-    height: 100%;
-    font-size: 4vw;
-    font-weight: bold;
-   
-}
-
-.alt-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
  
-img {
-    height: 0;
-    min-height:100%;
-    
-    
-}
+ 
